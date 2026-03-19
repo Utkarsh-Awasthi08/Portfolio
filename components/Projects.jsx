@@ -33,7 +33,7 @@ const Projects = () => {
                         A full-stack video streaming app with large-file uploads, FFmpeg HLS transcoding, cancel-upload control, segmented streaming, MySQL persistence, and a modern React player interface.
                         </p>
                         <div className="project-links">
-                            <a href="https://github.com/scbushan05/expense-manager-api" className="project-link" target="_blank">
+                            <a href="https://github.com/Utkarsh-Awasthi08/video-stream-backend.git" className="project-link" target="_blank">
                                 <i className="fab fa-github"></i> View Code
                             </a>
                         </div>
@@ -61,7 +61,7 @@ const Projects = () => {
                         In this project, discover a secure peer-to-peer File Sharing application with instant uploads, temporary storage, unique invite codes, and high-speed direct downloads powered by a Java backend without any framework and a modern React interface.
                         </p>
                         <div className="project-links">
-                            <a href="https://topmate.io/scbushan05/1532304" className="project-link" target="_blank">
+                            <a href="https://github.com/Utkarsh-Awasthi08/my-peer-link-backend" className="project-link" target="_blank">
                                 <i className="fab fa-github"></i> View Code
                             </a>
                         </div>
@@ -90,7 +90,7 @@ const Projects = () => {
                         In this project, we will build a real-time chat application featuring room creation, message history, live WebSocket messaging using Spring Boot, and a smooth user interface.
                         </p>
                         <div className="project-links">
-                            <a href="https://topmate.io/scbushan05/1465159" className="project-link" target="_blank">
+                            <a href="https://github.com/Utkarsh-Awasthi08/chat-app-backend" className="project-link" target="_blank">
                                 <i className="fab fa-github"></i> View Code
                             </a>
                         </div>
@@ -117,15 +117,12 @@ const Projects = () => {
                         A web-based application that generates clear, professional, and context-aware emails based on user input, allowing users to specify purpose, tone, and key points.
                         </p>
                         <div className="project-links">
-                            <a href="https://topmate.io/scbushan05/1498190" className="project-link" target="_blank">
+                            <a href="https://github.com/Utkarsh-Awasthi08/email-writer-backend" className="project-link" target="_blank">
                                 <i className="fab fa-github"></i> View Code
                             </a>
                         </div>
                     </div>
                 </div>
-
-                
-
             </div>
         </div>
     </section>
