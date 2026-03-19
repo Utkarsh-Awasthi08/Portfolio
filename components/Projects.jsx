@@ -13,7 +13,7 @@ const Projects = () => {
             <div className="projects-container">
                 <div className="project-card">
                     <div className="project-image">
-                        <img src="../images/thumbnail6.jpg" alt="udemy"></img>
+                        <img src="../images/video.png" alt="udemy"></img>
                         <div className="project-overlay"></div>
                         <div className="project-tags">
                             <span className="project-tag">Spring Boot</span>
@@ -42,7 +42,7 @@ const Projects = () => {
 
                 <div className="project-card">
                     <div className="project-image">
-                        <img src="../images/thumbnail1.jpg" alt="Ambulance Navigation System"></img>
+                        <img src="../images/peerlink.png" alt="Ambulance Navigation System"></img>
                         <div className="project-overlay"></div>
                         <div className="project-tags">
                             <span className="project-tag">Next.js</span>
@@ -70,7 +70,7 @@ const Projects = () => {
 
                 <div className="project-card">
                     <div className="project-image">
-                        <img src="../images/thumbnail2.jpg" alt="Ener Tracker"></img>
+                        <img src="../images/caht.png" alt="Ener Tracker"></img>
                         <div className="project-overlay"></div>
                         <div className="project-tags">
                             <span className="project-tag">Spring Boot</span>
@@ -99,7 +99,7 @@ const Projects = () => {
 
                 <div className="project-card">
                     <div className="project-image">
-                        <img src="../images/thumbnail3.jpg" alt="Freelance retail billing software"></img>
+                        <img src="../images/email.png" alt="Freelance retail billing software"></img>
                         <div className="project-overlay"></div>
                         <div className="project-tags">
                             <span className="project-tag">Spring Boot</span>
