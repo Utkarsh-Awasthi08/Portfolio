@@ -19,9 +19,7 @@ function App() {
     <>
       <Loader/>
 
-      <div className="floating-shape shape-1"></div>
-      <div className="floating-shape shape-2"></div>
-      <div className="floating-shape shape-3"></div>
+      
 
       <Header />
 

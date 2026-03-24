@@ -12,7 +12,7 @@ const Hero = () => {
                 <p className="hero-description">
                     I’m a passionate full-stack developer who loves turning ideas into clean, functional, and impactful digital experiences. Whether it’s architecting robust backend systems or crafting intuitive user interfaces, I enjoy solving real-world problems through thoughtful engineering. With a strong foundation in Java, Spring Boot, React, and modern web technologies, I thrive on challenges that push me to learn, innovate, and grow—both as a developer and as a problem solver.
                 </p>
-                <div className="hero-buttons">
+                <div className="hero-buttons" style={{display: "flex", gap: "1rem"}}>
                     <a href="#projects" className="btn btn-primary">
                         View My Work <i className="fas fa-arrow-right"></i>
                     </a>
