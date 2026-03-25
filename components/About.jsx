@@ -15,13 +15,13 @@ const About = () => {
                         <div className="about-tagline">My Background</div>
                         <h3 className="about-heading">Developer by Profession, Problem Solver by Passion.</h3>
                         <p className="about-text">
-                            I'm Utkarsh Awasthi — a passionate software developer who loves solving complex real-world problems through clean, efficient code. With hands-on experience in building full-stack applications using technologies like Java, Spring Boot, React, and MySQL, I’ve dedicated my career to creating impactful digital solutions that are both scalable and user-friendly.
+                            I'm Utkarsh Awasthi — a passionate software developer who loves solving complex real-world problems through clean, efficient code. With hands-on experience in building full-stack applications using technologies like Java, Spring Boot, React, MySQL and numerous others, I’ve dedicated my career to creating impactful digital solutions that are both scalable and user-friendly.
                         </p>
                         <p className="about-text">
-                            As a developer, I’m deeply passionate about solving complex problems and creating systems that are both efficient and scalable. With a strong understanding of system design principles, I enjoy architecting applications that handle real-world constraints—whether it’s optimizing performance, building reliable APIs, or structuring distributed components that grow seamlessly with user needs. My work is driven by clarity, precision, and a constant desire to think one level deeper, ensuring that every solution I build stands strong not just today, but in the long run.
+                            With a strong understanding of system design principles, I enjoy architecting applications that handle real-world constraints—whether it’s optimizing performance, building reliable APIs, or structuring distributed components that grow seamlessly with user needs.
                         </p>
                         <p className="about-text">
-                            Beyond development, I’m a DevOps enthusiast committed to bridging the gap between software engineering and seamless deployment pipelines. I actively explore tools and practices that enhance automation, reliability, and collaboration—whether it’s containerization, CI/CD workflows, cloud services, or infrastructure-as-code. I thrive in environments where innovation and continuous improvement go hand in hand, and I’m always eager to share knowledge, collaborate, and contribute to meaningful engineering growth.
+                            Beyond development, I’m a DevOps enthusiast committed to bridging the gap between software engineering and seamless deployment pipelines. I actively explore tools and practices that enhance automation, reliability, and collaboration.
                         </p>
 
                     </div>

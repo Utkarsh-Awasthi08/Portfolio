@@ -58,7 +58,7 @@ const Projects = () => {
                     <div className="project-content">
                         <h3 className="project-title">PeerLink</h3>
                         <p className="project-description">
-                        In this project, discover a secure peer-to-peer File Sharing application with instant uploads, temporary storage, unique invite codes, and high-speed direct downloads powered by a Java backend without any framework and a modern React interface.
+                        File Sharing application with instant uploads, temporary storage and unique download codes powered by a Java backend without any framework and a modern React interface.
                         </p>
                         <div className="project-links">
                             <a href="https://github.com/Utkarsh-Awasthi08/my-peer-link-backend" className="project-link" target="_blank">
