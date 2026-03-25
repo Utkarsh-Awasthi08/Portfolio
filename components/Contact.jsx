@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+const ACCESS_KEY = import.meta.env.VITE_ACCESS_KEY;
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: "",
@@ -19,32 +19,34 @@ const Contact = () => {
     };
 
     const handleSubmit = async (e) => {
+        
         e.preventDefault();
 
         // 🚨 Honeypot check
         if (formData.botcheck) {
             return;
         }
-
+        
         setLoading(true);
         setStatus("");
 
         try {
+            console.log("Hello");
             const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify({
-                    access_key: {ACCESS_KEY},
+                    access_key: ACCESS_KEY,
                     name: formData.name,
                     email: formData.email,
                     message: formData.message
                 })
             });
-
+            
             const result = await response.json();
-
+            console.log(result);
             if (result.success) {
                 setStatus("SUCCESS");
                 setFormData({ name: "", email: "", message: "", botcheck: "" });
@@ -52,6 +54,7 @@ const Contact = () => {
                 setStatus("ERROR");
             }
         } catch (error) {
+            console.log(error);
             setStatus("ERROR");
         }
 
