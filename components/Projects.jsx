@@ -4,25 +4,83 @@ const Projects = () => {
   return (
     <section className="section projects" id="projects">
         <div className="container">
-            <div className="section-title-container">
-                <h2 className="section-title">My Work</h2>
+            <div className="section-title-container reveal">
+                <div className="section-badge"><i className="fas fa-laptop-code"></i> Portfolio</div>
+                <h2 className="section-title">My <span className="highlight">Work</span></h2>
                 <p className="section-subtitle">
-                    Explore some of my recent projects on their website or Github for code.
+                    Explore some of my recent projects — visit the live site or view source on GitHub.
                 </p>
             </div>
+
             <div className="projects-container">
+
+                {/* RebbenClipp */}
                 <div className="project-card">
                     <div className="project-image">
-                        <img src="../images/video.png" alt="udemy"></img>
+                        <img src="/images/RebbenClipp.webp" alt="RebbenClipp E-commerce Platform" loading="lazy" decoding="async" />
+                        <div className="project-overlay"></div>
+                        <div className="project-tags">
+                            <span className="project-tag">Next.js</span>
+                            <span className="project-tag">Node.js</span>
+                            <span className="project-tag">PostgreSQL</span>
+                            <span className="project-tag">MongoDB</span>
+                            <span className="project-tag">Redis</span>
+                            <span className="project-tag">Typesense</span>
+                            <span className="project-tag">Docker</span>
+                            <span className="project-tag">Coolify</span>
+                        </div>
+                    </div>
+                    <div className="project-content">
+                        <h3 className="project-title">RebbenClipp</h3>
+                        <p className="project-description">
+                            Designed and shipped a production e-commerce platform serving three distinct buyer segments (B2C/B2B/Enterprise) off one shared catalogue, powering live customer traffic and payments. Built the full stack solo — Node.js/Express.js, Next.js 15 SSR frontend, and a PostgreSQL + MongoDB + Redis + Typesense data layer.
+                        </p>
+                        <div className="project-links">
+                            <a href="https://rebbenclipp.com" className="project-link project-link-demo" target="_blank" rel="noopener noreferrer">
+                                <i className="fas fa-external-link-alt"></i> Live Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                {/* GraphRAG Mentor */}
+                <div className="project-card">
+                    <div className="project-image">
+                        <img src="/images/GraphRAG.webp" alt="GraphRAG Mentor AI" loading="lazy" decoding="async" />
+                        <div className="project-overlay"></div>
+                        <div className="project-tags">
+                            <span className="project-tag">React.js</span>
+                            <span className="project-tag">Node.js</span>
+                            <span className="project-tag">Neo4j</span>
+                            <span className="project-tag">Redis</span>
+                            <span className="project-tag">Docker</span>
+                            <span className="project-tag">OpenRouter</span>
+                            <span className="project-tag">Vector Embeddings</span>
+                        </div>
+                    </div>
+                    <div className="project-content">
+                        <h3 className="project-title">GraphRAG Mentor</h3>
+                        <p className="project-description">
+                            Architected a GraphRAG-powered AI mentor across React, Express, and a Chrome Extension with JWT token sync, translating natural language into Text-to-Cypher and 768-dim vector subgraph queries to detect recurring mistake patterns. Decoupled LLM orchestration into a gRPC AI Gateway microservice with dynamic Gemini/Groq/OpenRouter fallback — reducing token usage by 65%.
+                        </p>
+                        <div className="project-links">
+                            <a href="https://github.com/Utkarsh-Awasthi08" className="project-link" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Video Streaming App */}
+                <div className="project-card">
+                    <div className="project-image">
+                        <img src="/images/video.webp" alt="Video Streaming App" loading="lazy" decoding="async" />
                         <div className="project-overlay"></div>
                         <div className="project-tags">
                             <span className="project-tag">Spring Boot</span>
                             <span className="project-tag">Spring Data JPA</span>
                             <span className="project-tag">React.js</span>
                             <span className="project-tag">MySQL</span>
-                            <span className="project-tag">Video.js</span>
-                            <span className="project-tag">Hls.js</span>
-                            <span className="project-tag">Flowbite + Tailwind CSS</span>
                             <span className="project-tag">FFmpeg</span>
                             <span className="project-tag">HLS Streaming</span>
                         </div>
@@ -30,99 +88,46 @@ const Projects = () => {
                     <div className="project-content">
                         <h3 className="project-title">Video Streaming App</h3>
                         <p className="project-description">
-                        A full-stack video streaming app with large-file uploads, FFmpeg HLS transcoding, cancel-upload control, segmented streaming, MySQL persistence, and a modern React player interface.
+                            A full-stack video streaming platform with large-file uploads, FFmpeg HLS transcoding, cancel-upload control, segmented streaming, MySQL persistence, and a modern React player interface with smooth playback and minimal latency.
                         </p>
                         <div className="project-links">
-                            <a href="https://github.com/Utkarsh-Awasthi08/video-stream-backend.git" className="project-link" target="_blank">
-                                <i className="fab fa-github"></i> View Code
+                            <a href="https://github.com/Utkarsh-Awasthi08/video-stream-backend.git" className="project-link" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-github"></i> Backend
                             </a>
                         </div>
                     </div>
                 </div>
 
+                {/* PeerLink */}
                 <div className="project-card">
                     <div className="project-image">
-                        <img src="../images/peerlink.png" alt="Ambulance Navigation System"></img>
+                        <img src="/images/peerlink.webp" alt="PeerLink File Sharing" loading="lazy" decoding="async" />
                         <div className="project-overlay"></div>
                         <div className="project-tags">
+                            <span className="project-tag">Java</span>
+                            <span className="project-tag">Threadpool</span>
+                            <span className="project-tag">Docker</span>
                             <span className="project-tag">Next.js</span>
                             <span className="project-tag">TypeScript</span>
                             <span className="project-tag">Tailwind CSS</span>
-                            <span className="project-tag">Java</span>
-                            <span className="project-tag">Native Java HTTPServer</span>
-                            <span className="project-tag">Apache Commons FileUpload</span>
-                            <span className="project-tag">ThreadPool</span>
-                            <span className="project-tag">Docker</span>
                         </div>
                     </div>
                     <div className="project-content">
                         <h3 className="project-title">PeerLink</h3>
                         <p className="project-description">
-                        File Sharing application with instant uploads, temporary storage and unique download codes powered by a Java backend without any framework and a modern React interface.
+                            A lightweight file sharing system with custom request handling and file management logic built without any framework, focusing on performance, reliability, and ease of use. Successfully handles file sizes up to 500MB with unique download codes and temporary storage.
                         </p>
                         <div className="project-links">
-                            <a href="https://github.com/Utkarsh-Awasthi08/my-peer-link-backend" className="project-link" target="_blank">
-                                <i className="fab fa-github"></i> View Code
+                            <a href="https://github.com/Utkarsh-Awasthi08/my-peer-link-backend" className="project-link" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://peerlink-demo.vercel.app" className="project-link project-link-demo" target="_blank" rel="noopener noreferrer">
+                                <i className="fas fa-external-link-alt"></i> Demo
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div className="project-card">
-                    <div className="project-image">
-                        <img src="../images/caht.png" alt="Ener Tracker"></img>
-                        <div className="project-overlay"></div>
-                        <div className="project-tags">
-                            <span className="project-tag">Spring Boot</span>
-                            <span className="project-tag">React.js</span>
-                            <span className="project-tag">Spring WebSocket (STOMP)</span>
-                            <span className="project-tag">SockJS</span>
-                            <span className="project-tag">MongoDB</span>
-                            <span className="project-tag">Spring Data MongoDB</span>
-                            <span className="project-tag">SockJS Client</span>
-                            <span className="project-tag">STOMP.js</span>
-                            <span className="project-tag">Docker</span>
-                        </div>
-                    </div>
-                    <div className="project-content">
-                        <h3 className="project-title">Chat Application</h3>
-                        <p className="project-description">
-                        In this project, we will build a real-time chat application featuring room creation, message history, live WebSocket messaging using Spring Boot, and a smooth user interface.
-                        </p>
-                        <div className="project-links">
-                            <a href="https://github.com/Utkarsh-Awasthi08/chat-app-backend" className="project-link" target="_blank">
-                                <i className="fab fa-github"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="project-card">
-                    <div className="project-image">
-                        <img src="../images/email.png" alt="Freelance retail billing software"></img>
-                        <div className="project-overlay"></div>
-                        <div className="project-tags">
-                            <span className="project-tag">Spring Boot</span>
-                            <span className="project-tag">React</span>
-                            <span className="project-tag">Bootstrap</span>
-                            <span className="project-tag">MySQL</span>
-                            <span className="project-tag">AWS</span>
-                            <span className="project-tag">IntelliJ IDEA</span>
-                            <span className="project-tag">Full Stack</span>
-                        </div>
-                    </div>
-                    <div className="project-content">
-                        <h3 className="project-title">AI-Powered Email Writer</h3>
-                        <p className="project-description">
-                        A web-based application that generates clear, professional, and context-aware emails based on user input, allowing users to specify purpose, tone, and key points.
-                        </p>
-                        <div className="project-links">
-                            <a href="https://github.com/Utkarsh-Awasthi08/email-writer-backend" className="project-link" target="_blank">
-                                <i className="fab fa-github"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>

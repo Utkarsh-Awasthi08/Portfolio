@@ -2,13 +2,14 @@ import React from 'react'
 
 const Loader = () => {
   return (
-    <div className="loader-wrapper active">
+    <div className="loader-wrapper" id="site-loader">
         <div className="loader">
+            <div className="loader-ring"></div>
+            <div className="loader-ring"></div>
+            <div className="loader-ring"></div>
             <div className="loader-text">U.A.</div>
-            <div className="loader-circle"></div>
-            <div className="loader-circle"></div>
-            <div className="loader-circle"></div>
         </div>
+        <p className="loader-tagline">Loading Portfolio</p>
     </div>
   )
 }
