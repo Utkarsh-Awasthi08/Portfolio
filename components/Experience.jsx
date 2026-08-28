@@ -27,10 +27,10 @@ const Experience = () => {
                         <h4 className="timeline-subtitle">Boomlex Technologies</h4>
                         <ul className="timeline-list">
                             <li className="timeline-list-item">
-                                <strong>Manifested RebbenClipp, a multi-tenant e-commerce &amp; procurement platform</strong> unifying B2C, B2B, and Enterprise buying on one shared catalogue — powered by Next.js, Node.js, PostgreSQL, MongoDB, Redis, and REST APIs. Structured core modules including inventory management, RFQ workflows, contract pricing, and role-based access control.
+                                <strong>Developed RebbenClipp, a multi-tenant e-commerce platform</strong> serving B2C, B2B, and Enterprise customers. Engineered the full-stack architecture using Next.js, Node.js, PostgreSQL, and Redis.
                             </li>
                             <li className="timeline-list-item">
-                                <strong>Created scalable backend systems and distributed services</strong>, integrating Firebase Authentication, Razorpay, MongoDB Atlas, Redis, Typesense and BunnyCDN into one unified platform. Built secure order processing, real-time inventory reservation, dynamic pricing engines, and a configurable enterprise purchase-approval workflow with parallel reviewer roles and budget/credit enforcement.
+                                <strong>Built scalable distributed systems</strong> integrating Firebase Auth, Razorpay, Typesense, and BunnyCDN. Designed secure order processing, real-time inventory, and dynamic pricing engines.
                             </li>
                         </ul>
                     </div>
@@ -65,7 +65,7 @@ const Experience = () => {
                         <h3 className="timeline-title">Developer</h3>
                         <h4 className="timeline-subtitle">Java | React | Full Stack</h4>
                         <p className="timeline-description">
-                            Designed and developed responsive web applications using modern frontend and backend technologies. Built full-stack web applications using React, Spring Boot, and MySQL.
+                            Built full-stack web applications utilizing React, Spring Boot, and MySQL.
                         </p>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ const Experience = () => {
                         <h3 className="timeline-title">System Designer</h3>
                         <h4 className="timeline-subtitle">System Design</h4>
                         <p className="timeline-description">
-                            Studied core system design concepts including scalability and modular architecture. Gained hands-on experience with REST APIs, database design, and authentication patterns.
+                            Architecting scalable systems with RESTful APIs, optimized databases, and secure authentication.
                         </p>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ const Experience = () => {
                         <h3 className="timeline-title">DevOps Enthusiast</h3>
                         <h4 className="timeline-subtitle">Cloud &amp; DevOps</h4>
                         <p className="timeline-description">
-                            Explored DevOps practices including containerization with Docker and CI/CD concepts. Built and deployed projects to understand real-world software lifecycle management.
+                            Implementing containerization (Docker) and CI/CD pipelines for automated, reliable deployments.
                         </p>
                     </div>
                 </div>
@@ -110,7 +110,7 @@ const Experience = () => {
                         <h3 className="timeline-title">Problem Solver</h3>
                         <h4 className="timeline-subtitle">LeetCode | GFG | HackerRank</h4>
                         <p className="timeline-description">
-                            Solved 500+ DSA problems across GeeksForGeeks, LeetCode, CodeChef and HackerRank. Competed in SIH 2024 &amp; 2025, Flipkart Grid 6.0, Adobe India Hackathon 2025, Walmart Sparkathon 2025, Amazon ML Challenge 2025, and NEST 2.0.
+                            500+ DSA problems solved. Active competitor in national hackathons including SIH, Flipkart Grid, and Amazon ML Challenge.
                         </p>
                     </div>
                 </div>

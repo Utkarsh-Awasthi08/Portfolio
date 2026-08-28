@@ -81,20 +81,10 @@ const About = () => {
               Developer by Profession,<br />Problem Solver by Passion.
             </h3>
             <p className="about-text">
-              I'm Utkarsh Awasthi — a passionate software developer who loves solving complex
-              real-world problems through clean, efficient code. With hands-on experience building
-              full-stack applications using Java, Spring Boot, React, MySQL and more, I've dedicated
-              my career to creating impactful digital solutions that are both scalable and user-friendly.
+              I’m Utkarsh Awasthi, a full-stack developer who enjoys building scalable, user-centric applications. With a strong foundation in Java, React, and Node.js, I specialize in architecting robust backend services and designing intuitive frontend interfaces.
             </p>
             <p className="about-text">
-              With a strong understanding of system design principles, I enjoy architecting applications
-              that handle real-world constraints — optimizing performance, building reliable APIs, and
-              structuring distributed components that grow seamlessly with user needs.
-            </p>
-            <p className="about-text">
-              Beyond development, I'm a DevOps enthusiast committed to bridging the gap between
-              software engineering and seamless deployment pipelines. I actively explore tools and
-              practices that enhance automation, reliability, and collaboration.
+              I have a deep passion for problem-solving and system design, constantly exploring ways to optimize performance and data flows. Beyond coding, I actively leverage DevOps practices like Docker and CI/CD to bridge the gap between development and seamless, reliable deployments.
             </p>
           </div>
         </div>

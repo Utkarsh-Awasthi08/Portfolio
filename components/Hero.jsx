@@ -57,10 +57,7 @@ const Hero = () => {
                 </h2>
 
                 <p className="hero-description">
-                    I'm a passionate full-stack developer who loves turning ideas into clean, functional,
-                    and impactful digital experiences. Whether it's architecting robust backend systems
-                    or crafting intuitive user interfaces, I enjoy solving real-world problems through
-                    thoughtful engineering.
+                    Full-stack engineer building scalable systems and intuitive interfaces. Passionate about solving complex problems through clean, efficient code.
                 </p>
 
                 <div className="hero-buttons">

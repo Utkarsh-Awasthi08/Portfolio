@@ -33,7 +33,7 @@ const Projects = () => {
                         <div className="project-content">
                             <h3 className="project-title">RebbenClipp</h3>
                             <p className="project-description">
-                                Designed and shipped a production e-commerce platform serving three distinct buyer segments (B2C/B2B/Enterprise) off one shared catalogue, powering live customer traffic and payments. Built the full stack solo — Node.js/Express.js, Next.js 15 SSR frontend, and a PostgreSQL + MongoDB + Redis + Typesense data layer.
+                                Production multi-tenant e-commerce platform serving B2C, B2B, and Enterprise clients. Built end-to-end with Next.js, Node.js, PostgreSQL, and Redis.
                             </p>
                             <div className="project-links">
                                 <a href="https://rebbenclipp.in" className="project-link project-link-demo" target="_blank" rel="noopener noreferrer">
@@ -54,14 +54,16 @@ const Projects = () => {
                                 <span className="project-tag">Neo4j</span>
                                 <span className="project-tag">Redis</span>
                                 <span className="project-tag">Docker</span>
-                                <span className="project-tag">OpenRouter</span>
+                                <span className="project-tag">AI Gateway</span>
                                 <span className="project-tag">Vector Embeddings</span>
+                                <span className="project-tag">gRPC</span>
+                                <span className="project-tag">Chrome Extensions</span>
                             </div>
                         </div>
                         <div className="project-content">
                             <h3 className="project-title">GraphRAG Mentor</h3>
                             <p className="project-description">
-                                Architected a GraphRAG-powered AI mentor across React, Express, and a Chrome Extension with JWT token sync, translating natural language into Text-to-Cypher and 768-dim vector subgraph queries to detect recurring mistake patterns. Decoupled LLM orchestration into a gRPC AI Gateway microservice with dynamic Gemini/Groq/OpenRouter fallback — reducing token usage by 65%.
+                                GraphRAG AI mentor using Neo4j and vector embeddings to detect mistake patterns. Features a gRPC AI Gateway with dynamic LLM routing, cutting token usage by 65%.
                             </p>
                             <div className="project-links">
                                 <a href="https://github.com/Utkarsh-Awasthi08/GraphRAG_Mentor" className="project-link" target="_blank" rel="noopener noreferrer">
@@ -88,7 +90,7 @@ const Projects = () => {
                         <div className="project-content">
                             <h3 className="project-title">Video Streaming App</h3>
                             <p className="project-description">
-                                A full-stack video streaming platform with large-file uploads, FFmpeg HLS transcoding, cancel-upload control, segmented streaming, MySQL persistence, and a modern React player interface with smooth playback and minimal latency.
+                                Full-stack streaming platform featuring FFmpeg HLS transcoding, resilient large-file uploads, and a low-latency React player.
                             </p>
                             <div className="project-links">
                                 <a href="https://github.com/Utkarsh-Awasthi08/video-stream-backend.git" className="project-link" target="_blank" rel="noopener noreferrer">
@@ -115,7 +117,7 @@ const Projects = () => {
                         <div className="project-content">
                             <h3 className="project-title">PeerLink</h3>
                             <p className="project-description">
-                                A lightweight file sharing system with custom request handling and file management logic built without any framework, focusing on performance, reliability, and ease of use. Successfully handles file sizes up to 500MB with unique download codes and temporary storage.
+                                High-performance file sharing system built from scratch in Java. Handles 500MB+ transfers using custom thread pools and secure temporary storage.
                             </p>
                             <div className="project-links">
                                 <a href="https://github.com/Utkarsh-Awasthi08/my-peer-link-backend" className="project-link" target="_blank" rel="noopener noreferrer">
