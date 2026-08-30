@@ -123,8 +123,8 @@ const Projects = () => {
                                 <a href="https://github.com/Utkarsh-Awasthi08/my-peer-link-backend" className="project-link" target="_blank" rel="noopener noreferrer">
                                     <i className="fab fa-github"></i> GitHub
                                 </a>
-                                <a href="https://peerlink-demo.vercel.app" className="project-link project-link-demo" target="_blank" rel="noopener noreferrer">
-                                    <i className="fas fa-external-link-alt"></i> Demo
+                                <a href="https://my-peer-link.vercel.app" className="project-link project-link-demo" target="_blank" rel="noopener noreferrer">
+                                    <i className="fas fa-external-link-alt"></i> Live Site
                                 </a>
                             </div>
                         </div>
