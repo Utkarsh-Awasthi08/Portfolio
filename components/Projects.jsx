@@ -88,13 +88,13 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="project-content">
-                            <h3 className="project-title">Video Streaming App</h3>
+                            <h3 className="project-title">StreamFlix</h3>
                             <p className="project-description">
                                 Full-stack streaming platform featuring FFmpeg HLS transcoding, resilient large-file uploads, and a low-latency React player.
                             </p>
                             <div className="project-links">
-                                <a href="https://github.com/Utkarsh-Awasthi08/video-stream-backend.git" className="project-link" target="_blank" rel="noopener noreferrer">
-                                    <i className="fab fa-github"></i> Backend
+                                <a href="https://github.com/Utkarsh-Awasthi08/Video-Stream-App" className="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i className="fab fa-github"></i> Github
                                 </a>
                             </div>
                         </div>
