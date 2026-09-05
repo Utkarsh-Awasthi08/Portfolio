@@ -107,11 +107,12 @@ const Projects = () => {
                             <div className="project-overlay"></div>
                             <div className="project-tags">
                                 <span className="project-tag">Java</span>
-                                <span className="project-tag">Threadpool</span>
+                                <span className="project-tag">Spring Boot</span>
                                 <span className="project-tag">Docker</span>
                                 <span className="project-tag">Next.js</span>
                                 <span className="project-tag">TypeScript</span>
-                                <span className="project-tag">Tailwind CSS</span>
+                                <span className="project-tag">WebRTC</span>
+                                <span className="project-tag">WebSocket</span>
                             </div>
                         </div>
                         <div className="project-content">
@@ -120,7 +121,7 @@ const Projects = () => {
                                 High-performance file sharing system built from scratch in Java. Handles 500MB+ transfers using custom thread pools and secure temporary storage.
                             </p>
                             <div className="project-links">
-                                <a href="https://github.com/Utkarsh-Awasthi08/my-peer-link-backend" className="project-link" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/Utkarsh-Awasthi08/PeerLink" className="project-link" target="_blank" rel="noopener noreferrer">
                                     <i className="fab fa-github"></i> GitHub
                                 </a>
                                 <a href="https://p2p-peer-link.vercel.app/" className="project-link project-link-demo" target="_blank" rel="noopener noreferrer">
@@ -129,6 +130,35 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
+                    {/* DevPilot */}
+                    <div className="project-card">
+                        <div className="project-image">
+                            {/* Make sure to add a screenshot of DevPilot to your public/images folder! */}
+                            <img src="/images/devpilot.webp" alt="DevPilot Repository Dashboard" loading="lazy" decoding="async" />
+                            <div className="project-overlay"></div>
+                            <div className="project-tags">
+                                <span className="project-tag">Spring Boot</span>
+                                <span className="project-tag">Next.js</span>
+                                <span className="project-tag">PostgreSQL</span>
+                                <span className="project-tag">PgVector</span>
+                                <span className="project-tag">Spring AI</span>
+                                <span className="project-tag">Spring Security</span>
+                                <span className="project-tag">OAuth2</span>
+                            </div>
+                        </div>
+                        <div className="project-content">
+                            <h3 className="project-title">DevPilot</h3>
+                            <p className="project-description">
+                                An intelligent repository dashboard using RAG and vector embeddings to index and query codebases. Built end-to-end with Spring Boot, Next.js, and Spring AI.
+                            </p>
+                            <div className="project-links">
+                                <a href="https://github.com/Utkarsh-Awasthi08/DevPilot" className="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i className="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
 
                 </div>
             </div>
