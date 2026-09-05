@@ -22,6 +22,7 @@ const Projects = () => {
                             <div className="project-tags">
                                 <span className="project-tag">Next.js</span>
                                 <span className="project-tag">Node.js</span>
+                                <span className="project-tag">Express.js</span>
                                 <span className="project-tag">PostgreSQL</span>
                                 <span className="project-tag">MongoDB</span>
                                 <span className="project-tag">Redis</span>
