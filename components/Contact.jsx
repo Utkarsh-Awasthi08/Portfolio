@@ -3,14 +3,37 @@ const ACCESS_KEY = import.meta.env.VITE_ACCESS_KEY;
 
 const Contact = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '', botcheck: '' });
+    const [formErrors, setFormErrors] = useState({});
     const [loading, setLoading] = useState(false);
     const [status, setStatus] = useState('');
 
-    const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+        // Clear error when user types
+        if (formErrors[e.target.name]) {
+            setFormErrors({ ...formErrors, [e.target.name]: '' });
+        }
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (formData.botcheck) return;
+
+        // Validation
+        const errors = {};
+        if (!formData.name.trim()) errors.name = "Name is required";
+        if (!formData.email.trim()) {
+            errors.email = "Email is required";
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+            errors.email = "Please enter a valid email address";
+        }
+        if (!formData.message.trim()) errors.message = "Message is required";
+
+        if (Object.keys(errors).length > 0) {
+            setFormErrors(errors);
+            return;
+        }
+
         setLoading(true);
         setStatus('');
         try {
@@ -28,6 +51,7 @@ const Contact = () => {
             if (result.success) {
                 setStatus('SUCCESS');
                 setFormData({ name: '', email: '', message: '', botcheck: '' });
+                setFormErrors({});
             } else {
                 setStatus('ERROR');
             }
@@ -93,17 +117,20 @@ const Contact = () => {
 
                             <div className="form-group">
                                 <label htmlFor="name">Your Name</label>
-                                <input id="name" type="text" name="name" value={formData.name} onChange={handleChange} required className="form-control" placeholder="Utkarsh Awasthi" />
+                                <input id="name" type="text" name="name" value={formData.name} onChange={handleChange} className={`form-control ${formErrors.name ? 'error-input' : ''}`} placeholder="Utkarsh Awasthi" />
+                                {formErrors.name && <span className="error-text" style={{ color: '#ef4444', fontSize: '0.85rem', marginTop: '0.25rem', display: 'block' }}>{formErrors.name}</span>}
                             </div>
 
                             <div className="form-group">
                                 <label htmlFor="email">Your Email</label>
-                                <input id="email" type="email" name="email" value={formData.email} onChange={handleChange} required className="form-control" placeholder="you@example.com" />
+                                <input id="email" type="email" name="email" value={formData.email} onChange={handleChange} className={`form-control ${formErrors.email ? 'error-input' : ''}`} placeholder="you@example.com" />
+                                {formErrors.email && <span className="error-text" style={{ color: '#ef4444', fontSize: '0.85rem', marginTop: '0.25rem', display: 'block' }}>{formErrors.email}</span>}
                             </div>
 
                             <div className="form-group">
                                 <label htmlFor="message">Your Message</label>
-                                <textarea id="message" name="message" value={formData.message} onChange={handleChange} required className="form-control" placeholder="Tell me about your project or opportunity..." />
+                                <textarea id="message" name="message" value={formData.message} onChange={handleChange} className={`form-control ${formErrors.message ? 'error-input' : ''}`} placeholder="Tell me about your project or opportunity..." />
+                                {formErrors.message && <span className="error-text" style={{ color: '#ef4444', fontSize: '0.85rem', marginTop: '0.25rem', display: 'block' }}>{formErrors.message}</span>}
                             </div>
 
                             <div className="form-submit-row">
