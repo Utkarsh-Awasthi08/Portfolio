@@ -33,7 +33,7 @@ export default function useSiteEffects() {
   useEffect(() => {
     const dot = document.querySelector(".cursor-dot");
     const ring = document.querySelector(".cursor-ring");
-    
+
     // Disable custom cursor on touch devices for performance
     const isTouchDevice = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
     if (isTouchDevice || !dot || !ring) {
@@ -49,13 +49,13 @@ export default function useSiteEffects() {
     const onMove = (e) => {
       mouseX = e.clientX;
       mouseY = e.clientY;
-      dot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+      dot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
     };
 
     const animate = () => {
       ringX += (mouseX - ringX) * 0.15;
       ringY += (mouseY - ringY) * 0.15;
-      ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0)`;
+      ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) translate(-50%, -50%)`;
       rafId = requestAnimationFrame(animate);
     };
 
